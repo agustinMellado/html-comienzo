@@ -32,8 +32,11 @@
             <li> elemento no numerado xd</li>
             <li> elemento no numerado xd</li>
     </ul>
-    <!--'<table>' definimos una tabla-->
-    <table>
+    <!--'<table>' definimos una tabla
+         con "border" le damos un recuadre a la lista y 
+        manipulamos su grosor-->
+    
+    <table border="3">
         <!--'<thead>' titulos de la tabla-->
         <thead>
             <!--'<tr>' filas dentro de la tabla -->
@@ -44,10 +47,66 @@
                 <th>titulo 3</th>
             </tr>
         </thead>
-        <!--'<tbody>'  -->
+        <!--'<tbody>' Es el contenido que le damos a la tabla  -->
         <tbody>
-
+            <!--'<tr>' filas dentro de la tabla -->
+            <tr> <!--Primer fila fila fila-->
+                <!--'<td>' celda de elemento o valores-->
+                <td>elemento1a</td>
+                <td>elemnto2a</td>
+                <td>elemento3a</td>
+            </tr>
+            <!--'<tr>' filas dentro de la tabla -->
+            <tr> <!--Segunda fila fila-->
+                <!--'<td>' celda de elemento o valores-->
+                <td>elemento1b </td>
+                <td>elemnto2b</td>
+                <td>elemento3b</td>
+            </tr>
+            <tr>
+                <!-- El número de celdas debe coincidir en cada fila, independientemente
+                    de si son de la cabecera o del cuerpo. Si no es así, podemos hacer
+                    que una celda ocupe más de un hueco con el siguiente atributo de la
+                    etiqueta td-->
+                <!-- agregando 'colspan' controlo los espacios entre
+                     entre los elementos que utilizare-->
+                <!-- <'td' añade celdas de datos-->
+                <td colspan="2">elemento1c</td>
+                <td>elemento3c</td>
+            </tr>
         </tbody>
+       
     </table>
+     <!-- Podemos omitir la cabecera de la tabla suprimiendo las
+            etiquetas <'thead'>y <'tbody'>. Añadimos las filas directamente a la
+            tabla de la siguiente forma: -->
+            <p>tabla sin cabecera pero con enlaces</p>
+        <table border="3" >
+            <tr>
+                <td>elemento1a</td>
+                <td><a href="https://www.youtube.com/">Youtube</a></td>
+                <td>elemento3a</td>
+            </tr>
+            <tr>
+                
+                <img src="imagenes/Ey3qijDWQAExJ9h.jpg" alt="icon" height="128" width="128">
+                <!-- <'a'> usandolo dentro de <'td'> le asigno un enlace'-->
+                <td > <a href="https://twitter.com/home">Twitter</a></td>
+                <td><a href="https://www.instagram.com/">Instagram</a></td>
+                <td><a href="https://www.facebook.com/">facebook</a></td>
+            </tr>
+        </table>
+        <table border="1">
+            <tr>
+                <!-- usando <a> asigneun enlace y con <img> transforme el enlace en imagen dentro de <td>-->
+                <td> <a href="https://www.youtube.com/watch?v=scRoJCsy6dA"><img src="imagenes/Ey3qijDWQAExJ9h.jpg" alt="icon" height="128" width="128"></td></a>
+                <td><img src="imagenes/Ey3qijDWQAExJ9h.jpg" alt="icon" height="128" width="128"></td>
+                <td><img src="imagenes/Ey3qijDWQAExJ9h.jpg" alt="icon" height="128" width="128"></td>
+            </tr>
+        </table>
+            <div>
+                <form action="
+                "><fieldset></fieldset> </form>
+            </div>
 </body>
 </html>
